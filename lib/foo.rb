@@ -1,5 +1,10 @@
+require "foo/modifier"
 require "foo/version"
 
-module Foo
-  # Your code goes here...
+class Foo
+  attr_reader :foo
+
+  def initialize(foo)
+    @foo = foo
+  end
 end
